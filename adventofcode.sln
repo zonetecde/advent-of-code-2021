@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 2 - Dive!", "Day 2 - Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 3 - Binary Diagnostic", "Day 3 - Binary Diagnostic\Day 3 - Binary Diagnostic.csproj", "{A3887233-FEFE-4AF0-A6D6-13D00377BA8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 4 - Giant Squid", "Day 4 - Giant Squid\Day 4 - Giant Squid.csproj", "{C35DCF4D-6628-40AB-8EF5-3EBAC6E33A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 5 - Hydrothermal Venture", "Day 5 - Hydrothermal Venture\Day 5 - Hydrothermal Venture.csproj", "{F9F14818-4F8C-404F-B1F9-462E014FEFFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A3887233-FEFE-4AF0-A6D6-13D00377BA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3887233-FEFE-4AF0-A6D6-13D00377BA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3887233-FEFE-4AF0-A6D6-13D00377BA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35DCF4D-6628-40AB-8EF5-3EBAC6E33A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35DCF4D-6628-40AB-8EF5-3EBAC6E33A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35DCF4D-6628-40AB-8EF5-3EBAC6E33A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35DCF4D-6628-40AB-8EF5-3EBAC6E33A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
