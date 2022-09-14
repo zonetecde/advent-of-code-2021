@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 4 - Giant Squid", "Day 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 5 - Hydrothermal Venture", "Day 5 - Hydrothermal Venture\Day 5 - Hydrothermal Venture.csproj", "{F9F14818-4F8C-404F-B1F9-462E014FEFFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 6 - Lanternfish", "Day 6 - Lanternfish\Day 6 - Lanternfish.csproj", "{30728101-DB53-4E2D-8A62-C95E5E3F5564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9F14818-4F8C-404F-B1F9-462E014FEFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30728101-DB53-4E2D-8A62-C95E5E3F5564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30728101-DB53-4E2D-8A62-C95E5E3F5564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30728101-DB53-4E2D-8A62-C95E5E3F5564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30728101-DB53-4E2D-8A62-C95E5E3F5564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

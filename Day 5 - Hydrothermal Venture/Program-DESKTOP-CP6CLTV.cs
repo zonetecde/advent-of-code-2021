@@ -21,11 +21,11 @@ namespace Day_5___Hydrothermal_Venture
 
             // remove all non-vertical or non-horizontal lines
             // x1 = x2 or y1 = y2 = vertical/horizontal
-            inputs.RemoveAll(input =>
+            inputs.RemoveAll(x =>
             {
-                if (input[0].Split(',')[0] == input[1].Split(',')[0]
+                if (x[0].Split(',')[0] == x[1].Split(',')[0]
                 ||
-                input[0].Split(',')[1] == input[1].Split(',')[1])
+                x[0].Split(',')[1] == x[1].Split(',')[1])
                     return false;
                 else
                     return true;
@@ -33,20 +33,27 @@ namespace Day_5___Hydrothermal_Venture
 
             inputsPart2.RemoveAll(input =>
             {
-                if (!(input[0].Split(',')[0] == input[1].Split(',')[0]
-                ||
-                input[0].Split(',')[1] == input[1].Split(',')[1]))
+                int x1 = Convert.ToInt32(input[0].Split(',')[0]);
+                int y1 = Convert.ToInt32(input[0].Split(',')[1]);
+
+                int x2 = Convert.ToInt32(input[1].Split(',')[0]);
+                int y2 = Convert.ToInt32(input[1].Split(',')[1]);
+               
+                if (x1 == x2 || y1 == y2 || // find horizontal and vertical lines 
+                (x1 == y1 && x2 == y2) || // find diagonal 
+                (x1 == y2 && x2 == y1) // find diagonal 
+                )
                     return false;
                 else
                     return true;
             });
 
             int[,] board = new int[1000, 1000];
-
             for (int x = 0; x < 1000; x++)            
                 for (int y = 0; y < 1000; y++)                
                     board[x, y] = 0;
-                                  
+                          
+
             inputs.ForEach(input =>
             {
                 int x1 = Convert.ToInt32(input[0].Split(',')[0]);
@@ -86,63 +93,6 @@ namespace Day_5___Hydrothermal_Venture
                         atLeast2lines++;
 
             Console.WriteLine("part1 : " + atLeast2lines);
-
-            // ajoute les diagonales
-            inputsPart2.ForEach(input =>
-            {
-                int x1 = Convert.ToInt32(input[0].Split(',')[0]);
-                int y1 = Convert.ToInt32(input[0].Split(',')[1]);
-
-                int x2 = Convert.ToInt32(input[1].Split(',')[0]);
-                int y2 = Convert.ToInt32(input[1].Split(',')[1]);
-
-                if (x1 < x2 && y1 < y2)
-                {
-                    while (x1 <= x2 && y1 <= y2)
-                    {
-                        board[y1, x1] += 1;
-                        x1++; y1++;
-                    }
-                }
-                else if (x1 <= x2 && y1 >= y2)
-                {
-                    while (x1 <= x2 && y1 >= y2)
-                    {
-                        board[y1, x1] += 1;
-                        x1++; y1--;
-                    }
-                }
-                else if (x1 >= x2 && y1 <= y2)
-                {
-                    while (x1 >= x2 && y1 <= y2)
-                    {
-                        board[y1, x1] += 1;
-                        x1--; y1++;
-                    }
-                }
-                else if (x1 >= x2 && y1 >= y2)
-                {
-                    while (x1 >= x2 && y1 >= y2)
-                    {
-                        board[y1, x1] += 1;
-                        x1--; y1--;
-                    }
-                }
-
-
-            });
-
-            atLeast2lines = 0;
-
-            for (int x = 0; x < 1000; x++)
-                for (int y = 0; y < 1000; y++)
-                    if (board[x, y] >= 2)
-                        atLeast2lines++;
-
-            Console.WriteLine("part2 : " + atLeast2lines);
-
-
         }
-
     }
 }
